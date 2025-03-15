@@ -13,18 +13,24 @@ public:
         std::set<char> currChars = {};
         int maxLength = 0;
 
-        for (int i = 0; i < s.size(); i++){
-            char curr = s[i];
+        int left = 0, right = 0;
 
-            if (currChars.count(curr) == 1){
+        while (right < s.size()){
+            char curr = s[right];
+
+            if (currChars.find(curr) != currChars.end()){
                 if (currChars.size() > maxLength){
                     maxLength = currChars.size();
                 }
 
-                currChars.clear();
+                while(s[left] != curr){
+                    currChars.erase(s[left]);
+                    left++;
+                }
             }
 
             currChars.insert(curr);
+            right++;
         }
 
         if (currChars.size() > maxLength){
