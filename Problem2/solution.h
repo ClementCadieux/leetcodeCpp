@@ -1,3 +1,4 @@
+#include <iostream>
 #ifndef SOLUTION_H
 #define SOLUTION_H
 
@@ -16,8 +17,8 @@ public:
     {
         int carry = 0;
 
-        ListNode *res;
-        ListNode *curr;
+        ListNode *res = nullptr;
+        ListNode *curr = nullptr;
 
         while (l1 != nullptr && l2 != nullptr)
         {
@@ -65,6 +66,10 @@ public:
             curr = curr->next;
 
             remaining = remaining->next;
+        }
+
+        if (carry == 1){
+            curr->next = new ListNode(1);
         }
 
         return res;
