@@ -1,4 +1,5 @@
 #include <string>
+#include <set>
 #ifndef SOLUTION_H
 #define SOLUTION_H
 
