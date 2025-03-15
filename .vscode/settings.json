@@ -50,6 +50,7 @@
         "xlocmon": "cpp",
         "xlocnum": "cpp",
         "xloctime": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "set": "cpp"
     }
 }
