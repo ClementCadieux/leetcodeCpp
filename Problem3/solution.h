@@ -27,6 +27,7 @@ public:
                     currChars.erase(s[left]);
                     left++;
                 }
+                left++;
             }
 
             currChars.insert(curr);

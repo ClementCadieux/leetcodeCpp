@@ -32,11 +32,19 @@ public:
         std::cout << "TestCase4: Expected 3, Got " << result << std::endl;
     }
 
+    void runTest5() {
+        Solution solution;
+        std::string s = "aabaab!bb";
+        int result = solution.lengthOfLongestSubstring(s);
+        std::cout << "TestCase5: Expected 3, Got " << result << std::endl;
+    }
+
     void runAllTests() {
         runTest1();
         runTest2();
         runTest3();
         runTest4();
+        runTest5();
     }
 };
 
