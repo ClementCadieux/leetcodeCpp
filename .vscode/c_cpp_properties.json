@@ -3,8 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**",
-                "${workspaceFolder}/vcpkg/buildtrees/gtest/src/v1.16.0-a2e0b328c1.clean/googletest/include"
+                "${workspaceFolder}/**"
             ],
             "defines": [
                 "_DEBUG",
