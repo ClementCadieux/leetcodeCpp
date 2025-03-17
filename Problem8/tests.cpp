@@ -18,6 +18,9 @@ void test_myAtoi() {
 
     assert(sol->myAtoi("we are 987") == 0);
     std::cout << "Test case 'we are 987' passed." << std::endl;
+
+    assert(sol->myAtoi("-91283472332") == INT_MIN);
+    std::cout << "Test case '-91283472332' passed." << std::endl;
 }
 
 int main() {
